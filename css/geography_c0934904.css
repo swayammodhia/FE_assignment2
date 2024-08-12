@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, sans-serif; /*sets the font for the body*/
+    margin: 0; /*Removes default margin from the body*/
+    padding: 0; /*Removes default padding from the body*/
+
+    /*Background image*/
+    background-image: url('../images/background_image_1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+/*Heading styles*/
+h2{
+    color: #333;
+    font-size: x-large;
+}
+/*paragraph margin*/
+p {
+    margin: 15px;
+    font-size: large;
+    font-weight: 500;
+}
+/*div element*/
+div {
+    text-align: center; /*centers the text inside div element*/
+}
+/*unordered list styles*/
+.li{
+    margin: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+/* Margin of List Item*/
+.li-2{
+    margin: 5px 0;
+    font-size: large;
+    font-weight: 500;
+}
+/* nav class*/
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /*Removes default bullet points from nav items*/
+    background-color: rgb(52, 50, 50); 
+    display: inline-block; /*displays nav items inline-block */
+    overflow: hidden; /*Hides overflow content*/
+}
+.li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+.li-1 a {
+    text-decoration: none !important; /*Forces removal of underline from links*/
+    font-size: 20px;
+    color: white !important; /*Forces the color of links to white*/
+}
+.logical {
+    color: black;
+    font-weight: none;
+}
+/*media query for screens wider than 600px*/
+@media (min-width: 600px)   {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .logical {
+        color: gray;
+        font-weight: bolder;
+    }
+}
+/*media query for screens narrower than 600px*/
+@media (max-width: 600px)   {
+    .logical {
+        color: mediumaquamarine;
+    }
+}
+.active {
+    background-color: #abdbe3;
+}
